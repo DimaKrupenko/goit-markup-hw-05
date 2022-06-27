@@ -299,6 +299,7 @@ height: 120px;
 
 .activities-img {
     position: relative;
+    z-index: -1;
     
 }
 .activities-img+.activities-img {
@@ -610,6 +611,8 @@ color: var(--accent-color);
 .footer-link:focus {
     background: #2196F3;
 }
+
+
 /* разметка для кнопки */
 .backdrop {
     position: fixed;
@@ -617,9 +620,13 @@ color: var(--accent-color);
     height: 100%;
     top: 0;
     left: 0;
-    
     background-color: rgba(0, 0, 0, 0.1);
     border: 1px solid #0000001A
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
 }
 
 .modal {
@@ -653,6 +660,7 @@ color: var(--accent-color);
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+    cursor: pointer;
 }
 
 
