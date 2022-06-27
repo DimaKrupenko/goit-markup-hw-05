@@ -637,20 +637,25 @@ color: var(--accent-color);
 }
 
 .image-closed {
-    display: flex;
     width: 18px;
     height: 18px;
     fill: #000000;
 }
 .closed {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     margin-left: 490px;
     margin-top: 8px;
     width: 30px;
     height: 30px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
-   
+    border-radius: 50%;
 }
+
+
 
 /* css для портфолио */
 
