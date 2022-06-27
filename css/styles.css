@@ -676,6 +676,7 @@ color: var(--accent-color);
 }
 
 .portfolio-list {
+    position: relative;
     box-sizing: border-box;
     width: 370px;
     background: #FFFFFF;
@@ -725,6 +726,27 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     margin-top: 0;
     margin-bottom: 0;
     display: flex;
-    
-
 }
+
+.hover-portfolio {
+    opacity: 0;
+}
+.hover-portfolio:hover {
+    opacity: 1;
+}
+
+.hover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding: 63px 24px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background: rgba(33, 150, 243, 0.9);
+}
+
