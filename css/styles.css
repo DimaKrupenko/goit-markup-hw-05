@@ -610,6 +610,47 @@ color: var(--accent-color);
 .footer-link:focus {
     background: #2196F3;
 }
+/* разметка для кнопки */
+.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid #0000001A
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    display: flex;
+
+}
+
+.image-closed {
+    display: flex;
+    width: 18px;
+    height: 18px;
+    fill: #000000;
+}
+.closed {
+    margin-left: 490px;
+    margin-top: 8px;
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+   
+}
 
 /* css для портфолио */
 
