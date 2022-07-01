@@ -89,9 +89,7 @@ header {
     
 }
 
-.navigation-list {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 .navigation-link {
     padding-top: 32px;
@@ -103,7 +101,7 @@ header {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation-list + .navigation-list {
     margin-left: 50px;
@@ -122,8 +120,10 @@ header {
     
 }
 
-.navigation-list :hover, 
-.navigation-list :focus {
+
+
+.navigation-link:hover, 
+.navigation-link:focus {
     color: var(--accent-color);
 }
 
@@ -208,7 +208,7 @@ header {
     letter-spacing: 0.06em;
     border: 0;
     border-radius: 4px;
-       
+    
 }
 
 /* наши преимущества */
@@ -460,11 +460,10 @@ height: 120px;
 
 .clients-link {
     display: flex;
-    padding: 16px 32px;
     fill: #AFB1B8;
     width: 170px;
     height: 92px;
-    text-align: center;
+    align-items: center;
     justify-content: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -630,13 +629,16 @@ color: var(--accent-color);
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.1);
-    border: 1px solid #0000001A
+    border: 1px solid #0000001A;
+    transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibilitty 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
+   
 }
 
 .modal {
@@ -650,8 +652,13 @@ color: var(--accent-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     display: flex;
-
+    
 }
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1.1,1)
+}
+
 
 .image-closed {
    width: 11px;
